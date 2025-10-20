@@ -64,3 +64,38 @@ header button {
 header button:hover {
   background-color: rgb(34, 110, 34);
 }
+
+main {
+  padding: 50px;
+  text-align: center;
+}
+
+main div.about {
+}
+
+main div.about div.two_parts {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "a b";
+}
+
+main div.about img {
+  width: 300px;
+}
+
+main div.about p {
+    color: black;
+}
+
+
+
+main div.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+main div.movies {
+  margin-top: 50px;
+}
