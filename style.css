@@ -1,7 +1,6 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  width: 100;
 }
 
 header {
@@ -32,19 +31,17 @@ header nav a:hover {
   border-radius: 5px;
 }
 
-header h1,
-p {
+header h1 {
   margin-top: 60px;
+  font-size: 50px;
   color: white;
   text-align: center;
 }
 
-header h1 {
-  font-size: 50px;
-}
-
 header p {
   font-size: 25px;
+  color: white;
+  text-align: center;
 }
 
 header button {
@@ -85,10 +82,8 @@ main div.about img {
 }
 
 main div.about p {
-    color: black;
+  color: black;
 }
-
-
 
 main div.gallery {
   display: flex;
@@ -98,4 +93,60 @@ main div.gallery {
 
 main div.movies {
   margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+  header {
+    height: 500px;
+  }
+
+  header nav a {
+    padding: 15px 6px;
+  }
+  main div.about div.two_parts {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b";
+    gap: 20px;
+  }
+
+  main div.about img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 450px;
+  }
+  header nav a {
+    padding: 15px 6px;
+    font-size: 17px;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  header button {
+    padding: 10px 20px;
+    font-size: medium;
+  }
+
+  main {
+    padding: 10px;
+    text-align: center;
+  }
+
+  main div.about img {
+    width: 250px;
+  }
+
+  main div.about div.two_parts {
+    margin-top: 20px;
+  }
 }
